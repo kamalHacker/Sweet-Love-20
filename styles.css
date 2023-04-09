@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(ImagesDating/swans-couple-heart-uhdpaper.com-4K-8.1501.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tagline{
+    text-align: center;
+    width: 650px;
+    padding: 20px;
+    margin: 25px;
+}
+.tagline p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    text-shadow: -10px 10px 18px black;
+    animation-name: tagline;
+    animation-duration: 2.5s;
+}
+@keyframes tagline {
+   from {
+    opacity: 0.1;
+    line-height: 1000px;
+   }
+   to{
+    opacity: 1;
+    line-height: 60px;
+   }
+}
+.premium{
+    float: right;
+    width: 250px;
+    text-align: center;
+    margin: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid rgb(248, 211, 157);
+    box-shadow: -10px 10px 15px #302d2d;
+    border-radius: 30px;
+    padding: 15px;
+}
+.premium-box{
+    animation-name: premium;
+    animation-duration: 3s;
+    transition: all .3 ease-in;
+}
+@keyframes premium {
+    from {
+     opacity: 0.1;
+     padding: 500px;
+    }
+    to{
+     opacity: 1;
+     padding: 5px;
+    }
+ }
+.premium button{
+    font-size: 30px;
+    margin-top: 10px;
+    border-radius: 50px;
+    border-color: blanchedalmond;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, rgb(248, 211, 157), rgb(142, 99, 35));
+}
+.premium button:hover{
+    background-image: linear-gradient(to bottom right, rgb(253, 191, 97), rgb(165, 112, 32));
+}
+nav{
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    height: 120px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-height: 5vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 2vh 3vw;
+    padding-top: 5.6vh;
+}
+.heart-logo{
+    width: 55px;
+    height: 40px;
+}
+.name-logo{
+    width: 250px;
+    height: 150px;
+}
+.login{
+    padding: 25px;
+    display: flex;
+}
+@keyframes nav {
+    from{
+        line-height: 1000px;
+    }
+    to{
+        line-height: 20px;
+    }
+}
+.login-1, .login-2{
+    height: 60px;
+    padding:10px;
+    margin-right: 10px;
+    border-radius: 57px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.login-1:hover, .login-2:hover{
+    border: 2px dotted white;
+    color: white;
+}
+a{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.story{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    margin: 0;
+    font-family: 'Alkatra', cursive;
+}
+.story::-webkit-scrollbar{
+    width: 0;
+}
+.story-1, .story-2, .story-3,.story-4, .story-5, .story-6{
+    margin: 25px;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 2px 1px 20px;
+    border: 1px solid rgba(219,180,137,255);
+    border: 1px solid rgb(199, 165, 120);
+    min-width: 450px;
+    /* background-image: url(ImagesDating/quotes1.png),url(ImagesDating/quotes2.png);
+    background-position: bottom left, top right;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;*/
+    transition: all .3s ease;
+}
+.story-1:hover, .story-2:hover, .story-3:hover,.story-4:hover, .story-5:hover, .story-6:hover{
+    transform: scale(0.9);
+    background-image: url(ImagesDating/quotes1.png), url(ImagesDating/quotes2.png), url(ImagesDating/swans-couple-heart-uhdpaper.com-4K-8.1501.jpg);
+    background-position: bottom left, top right,top left;
+    background-repeat: no-repeat;
+    background-size: 50px 50px,50px 50px, 500%;
+    animation-name: stories;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    transition: ease-out;
+}
+@keyframes stories{
+    from{
+        background-image: url(ImagesDating/quotes2.png), url(ImagesDating/quotes1.png), url(ImagesDating/swans-couple-heart-uhdpaper.com-4K-8.1501.jpg);
+        background-position: top left, top left,top left;
+        background-repeat: no-repeat;
+        background-size: 50px 50px,50px 50px, 500%;
+    }
+    to{
+        background-image: url(ImagesDating/quotes2.png), url(ImagesDating/quotes1.png), url(ImagesDating/swans-couple-heart-uhdpaper.com-4K-8.1501.jpg);
+        background-position: top right, bottom left,top left;
+        background-repeat: no-repeat;
+        background-size: 50px 50px,50px 50px, 500%;
+    }
+}
+.testimonial{
+    display:flex;
+    background-color:black;
+    color:white;
+    justify-content:space-around;
+    padding-top:20px;
+}
+.testimonial h2{
+   margin-bottom:10px;
+}
+.testimonial h3{
+   margin-bottom:10px;
+}
+li{
+   list-style:none;
+   padding:3px;
+}
+.icons{
+   font-size:25px;
+}
+.description{
+    background-color: black;
+    color:rgba(255, 255, 255, 0.586);
+    padding:90px;
+}
+.description hr{
+    opacity:50%;
+}
+.credits{
+    display:flex;
+    justify-content:space-between;
+}
